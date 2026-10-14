@@ -630,3 +630,50 @@ main, .hero, .hero-content{
     font-size: 20px;
     cursor: pointer;
 }
+
+@media (max-width: 1024px){
+   .text{
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px; /* 140px كتير جدا هيبوظ شكل الفون */
+    }
+    .hero-content{
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+}
+
+@media (max-width: 768px){
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; 
+    gap: 20px;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .Contact, .Features-list{
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeInUP{
+    from{
+     transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+       transform: translateY(0);
+        opacity: 1; 
+    }
+}
